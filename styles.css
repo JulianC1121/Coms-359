@@ -75,10 +75,30 @@ section{
     display: flex;
     flex-direction: column;
   }
+
+  img{
+    margin-bottom: 35px;
+  }
 }
 
 /*This is for tablet screen sizes*/
 @media screen and (max-width: 768px){
+  .bar{
+    display: flex;
+    flex-direction: column;
+  }
+
+  section{
+    display: flex;
+    flex-direction: column;
+  }
+
+  img{
+    margin-bottom: 35px;
+  }
+}
+
+@media screen and (max-width: 956px){
   .bar{
     display: flex;
     flex-direction: column;
@@ -124,3 +144,4 @@ section{
       text-shadow: none;
     } 
 }
+
