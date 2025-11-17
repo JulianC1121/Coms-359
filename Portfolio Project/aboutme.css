@@ -12,6 +12,15 @@ nav {
     font-weight: bold;
 }
 
+li{
+    text-align: left;
+}
+
+img{
+    height: 30%;
+    width: 30%;
+}
+
 .bar{
   color: white;
   text-align: center;
@@ -53,7 +62,7 @@ footer{
   margin-top: 35px;
 }
 
-/*Start of mobile display + flex/grid CSS*/
+/*Start of mobile display CSS*/
 section{
   margin-top: 35px;
 }
@@ -87,10 +96,6 @@ section{
   section{
     display: flex;
     flex-direction: column;
-  }
-
-  img{
-    margin-bottom: 35px;
   }
 }
 
