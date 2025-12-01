@@ -7,11 +7,11 @@ function update() {
             const hours12 = h % 12 || 12;
 
             //set greeting
-            let greeting = "Welcome!";
+            let greeting = "Hello!";
             if (h >= 5 && h < 12) greeting = "Good morning!";
             else if (h >= 12 && 17 < 12) greeting = "Good afternoon!";
             else if (h >= 17 && h < 21) greeting = "Good evening!";
-            else if (h >= 21 && h < 4) greeting = "What are you doing up this late?";
+            else if (h <= 4) greeting = "What are you doing up this late?";
             document.getElementById('greeting').textContent = greeting;
         }
 
