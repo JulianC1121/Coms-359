@@ -1,46 +1,27 @@
 <!DOCTYPE html>
 <html>
     <header>
-        <h2 class="neonText"><a href="index.html">JC's Lounge</a></h2>
+        <h2 class="neonText"><a href="../html/index.html">JC's Lounge</a></h2>
     </header>
 
     <head>
-        <link href="styles.css" rel="stylesheet">
+        <link href="../css/styles.css" rel="stylesheet">
         <title>JC's Lounge</title>
         
        <nav>
-        <p class="bar flex"> <a href="portfolio.html">Portfolio</a> <a href="aboutme.html">About Me</a> <a href="contact.html">Contact</a></p>
+        <p class="bar flex"> <a href="../html/portfolio.html">Portfolio</a> <a href="../html/aboutme.html">About Me</a> <a href="../html/contact.html">Contact</a></p>
        </nav>
     </head>
 
     <body>
         <h3><div id="greeting">Hello!</div></h3>
 
-        <script>
-            function update() {
-            const now = new Date();
-            const h = now.getHours();
-            const m = now.getMinutes().toString().padStart(2, '0');
-            const s = now.getSeconds().toString().padStart(2, '0');
-            const ampm = h >= 12 ? 'PM' : 'AM';
-            const hours12 = h % 12 || 12;
-
-            //set greeting
-            let greeting = "Hello!";
-            if (h >= 5 && h < 12) greeting = "Good morning!";
-            else if (h >= 12 && 17 < 12) greeting = "Good afternoon!";
-            else if (h >= 17 && h < 21) greeting = "Good evening!";
-            else if (h <= 4) greeting = "What are you doing up this late?";
-            document.getElementById('greeting').textContent = greeting;
-        }
-
-        update();
-        </script>
+        <script src="../js/timeofday.js"></script>
 
         <h3>Welcome to my page!</h3>
 
         <div id="container">
-                <p>This page is a portfiolio site created by Julian Carranza, a senior at Northern Illinois University.</br></br>
+                <p>This page is a portfolio site created by Julian Carranza, a senior at Northern Illinois University.</br></br>
 
                     I'm a Mexican American CS major that's expected to graduate in spring of 2026; and I'm an officer for NIU's ACM Organization. I am into web app development, such as 
                     websites, and app development.</br></br>
@@ -51,15 +32,15 @@
         </div>
 
         <section class="flex">
-            <img src="IMG_1305.jpg" alt="picture of me at a restaurant with a Margarita" max-width="100%" height="325">
-            <img src="IMG_8085.jpg" alt="picture of me with ACM at the 2025 STEMFest with Juan on the left, me, Doug in the middle,
+            <img src="../pictures/IMG_1305.jpg" alt="picture of me at a restaurant with a Margarita" max-width="100%" height="325">
+            <img src="../pictures/IMG_8085.jpg" alt="picture of me with ACM at the 2025 STEMFest with Juan on the left, me, Doug in the middle,
             and our friend Brett, showing off some example projects we created for the event." max-width="100%" height="325">
-            <img src="IMG_7540.jpg" alt="picture of me in Kinokuniya in front of the Gundam Statue" max-width="100%" height="325">
+            <img src="../pictures/IMG_7540.jpg" alt="picture of me in Kinokuniya in front of the Gundam Statue" max-width="100%" height="325">
         </section>
 
         <footer>
             <div id="container">
-                Here are some of my socials you can find me on! <br/>
+                Here are some of my socials you can find me on!<br/>
                 <p> <a href="https://x.com/ExpertJulian">Twitter</a> <a href="https://www.instagram.com/julianc.png/?hl=en">Instagram</a>
                     <a href="https://www.linkedin.com/in/julian-carranza-3b410a325">LinkedIn</a> <a href="https://github.com/JulianC1121">GitHub</a>
                 </p>
@@ -67,7 +48,3 @@
         </footer>
     </body>
 </html>
-
-
-
-
